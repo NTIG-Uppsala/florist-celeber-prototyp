@@ -6,7 +6,7 @@ Copyright (c) 2013-2021 Start Bootstrap LLC -->
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Florist Celeber</title>
+        <title>Nya björck blomsterhandel</title>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -29,7 +29,7 @@ Copyright (c) 2013-2021 Start Bootstrap LLC -->
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top noJs" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Florist Celeber</a>
+                <a class="navbar-brand" href="#page-top">Björck blomsterhandel</a>
                 <button class="navbar-toggler" id="navbarMenu" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Meny
                     <svg class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgba(255, 255, 255, 0.55)" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -42,7 +42,7 @@ Copyright (c) 2013-2021 Start Bootstrap LLC -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#page-top">Hem</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#stores">Butiker</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#info">Info</a></li>
                         <li class="nav-item"><a class="nav-link" href="#products">Produkter</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Tjänster</a></li>
                     </ul>
@@ -53,12 +53,12 @@ Copyright (c) 2013-2021 Start Bootstrap LLC -->
         <header class="masthead" id="mainPage">
             <div class="container"  id="mastheadContainer">
                 <div class="masthead-subheading">Välkommen till</div>
-                <div class="masthead-heading text-uppercase">Florist Celeber</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#stores">Våra butiker</a>
+                <div class="masthead-heading text-uppercase">Björck blomsterhandel</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#info">Info</a>
             </div>
             <div class="arrowDownCon">
                 <div class="arrowDown">
-                    <a href="#stores"> <!--Maybe change to go to the next section -->
+                    <a href="#info">
                         <svg width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <polyline points="6 9 12 15 18 9" />
@@ -68,43 +68,158 @@ Copyright (c) 2013-2021 Start Bootstrap LLC -->
                 </div>
             </div>
         </header>
-        <!-- stores-->
-        <section class="page-section" id="stores">
+        <!-- info-->
+        <section class="page-section" id="info">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase gap">Butiker</h2>
+                    <h2 class="section-heading text-uppercase gap">Info</h2>
                 </div>
-               
-               <div class="rowTwo">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- store 1-->
-                        <div class="link-image">
-                            <a href="kiruna/">
-                            <div class="link-image-container">
-                                <img class="img-fluid" src="assets/img/header-bg-kiruna.jpg" alt="Kiruna" />
-                            </div>
-                                <div class="store-caption">
-                                    <div class="store-caption-heading">Florist Celeber</div>
-                                    <div class="store-caption-subheading text-muted">Kiruna</div>
+                <div class="row text-center">
+                    <div class="col-md-3"  id="hoursOpen">
+                        <div class="icon-circle">
+                            <div class="icon-container">
+                                <div class="icon">
+                                    <svg class="icon icon-tabler icon-tabler-clock" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <title>Öppettider-Icon</title>
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <circle cx="12" cy="12" r="9" />
+                                        <polyline points="12 7 12 12 15 15" />
+                                      </svg>
                                 </div>
-                            </a>
+                            </div>
+                        </div>
+                        <h4 class="my-3">Öppettider</h4>
+                        <div class="infoListContainer">
+                            <div class="hours text-muted">
+                                <div class="hoursContainer">
+                                    <div class="d-flex">
+                                        <div>Måndagar</div>
+                                        <div class="ms-auto" id="mandagTid">10-16</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Tisdagar</div>
+                                        <div class="ms-auto" id="tisdagTid">10-16</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Onsdagar</div>
+                                        <div class="ms-auto" id="onsdagTid">10-16</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Torsdagar</div>
+                                        <div class="ms-auto" id="torsdagTid">10-16</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Fredagar</div>
+                                        <div class="ms-auto" id="fredagTid">10-16</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Lördag</div>
+                                        <div class="ms-auto" id="lordagTid">12-15</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="liveOpeningHours"></div>
+                    </div>
+                    <div class="col-md-3" id="findUs">
+                        <div class="icon-circle">
+                            <div class="icon-container">
+                                <div class="icon">
+                                    <svg class="icon icon-tabler icon-tabler-map-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <title>Hitta-oss-Icon</title>
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <line x1="18" y1="6" x2="18" y2="6.01" />
+                                        <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                                        <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                                        <line x1="9" y1="4" x2="9" y2="17" />
+                                        <line x1="15" y1="15" x2="15" y2="20" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="my-3">Hitta oss</h4>
+                        <div class="infoListContainer">
+                            <ul class="infoList text-muted">
+                                <li>Torkelsgatan 36</li>
+                                <li>753 29 Uppsala</li>
+                                <li><a href="https://www.google.com/maps/dir//Bj%C3%B6rck+Blomsterhandel,+Torkelsgatan+36,+753+29+Uppsala/@59.8538732,17.6167496,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x465fcc089dd7f38d:0xce2483c7fec1e4c0!2m2!1d17.6470031!2d59.8665724!3e0">Hitta hit</a></li> <!--Link to place google maps-->
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icon-circle" >
+                            <div class="icon-container">
+                                <div class="icon">
+                                    <svg class="icon icon-tabler icon-tabler-phone" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <title>Kontaktuppgifter-Icon</title>
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="my-3" id="aboutUs">Kontaktuppgifter</h4>
+                        <div class="infoListContainer">
+                            <ul class="infoList text-muted">
+                                <li><a href="tel:+4618104200">018-10 42 00</a></li>
+                                <li><a href="mailto:bjorckblomsterhandel@gmail.com">bjorckblomsterhandel@gmail.com</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- store 2-->
-                        <div class="link-image">
-                            <a href="lulea/">
-                            <div class="link-image-container">
-                                <img class="img-fluid" src="assets/img/header-bg-lulea.jpg" alt="Luleå" />
-                            </div>
-                                <div class="store-caption">
-                                    <div class="store-caption-heading">Florist Celeber</div>
-                                    <div class="store-caption-subheading text-muted">Luleå</div>
+
+                    <div class="col-md-3">
+                        <div class="icon-circle" >
+                            <div class="icon-container">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <title>Stängda-dagar-Icon</title>
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <rect x="4" y="5" width="16" height="16" rx="2" />
+                                        <line x1="16" y1="3" x2="16" y2="7" />
+                                        <line x1="8" y1="3" x2="8" y2="7" />
+                                        <line x1="4" y1="11" x2="20" y2="11" />
+                                        <rect x="8" y="15" width="2" height="2" />
+                                    </svg>
                                 </div>
-                            </a>
+                            </div>
+                        </div>
+                        <h4 class="my-3">Stängda dagar</h4>
+                        <div class="infoListContainer">
+                            <div class="hours text-muted">
+                                <div class="hoursContainer" id="hideIfJavascript">
+                                    <div class="d-flex">
+                                        <div>Nyårsdagen</div>
+                                        <div class="ms-auto" id="nyarsdagen">01/01</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Trettondagen</div>
+                                        <div class="ms-auto" id="trettondagen">01/06</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Första maj</div>
+                                        <div class="ms-auto" id="forsta-maj">05/01</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Nationaldagen</div>
+                                        <div class="ms-auto" id="nationaldagen">06/06</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Julafton</div>
+                                        <div class="ms-auto" id="julafton">12/24</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div>Juldagen</div>
+                                        <div class="ms-auto" id="juldagen">12/25</div>
+                                    </div>
+                                </div>
+                                <div class="hoursContainer" id="dynamicClosedDays"></div>
+                            </div>
                         </div>
                     </div>
-               </div>
+                </div>
+            </div>
+        </section>
             </div>
         </section>
         <!--Products-->
@@ -203,15 +318,15 @@ Copyright (c) 2013-2021 Start Bootstrap LLC -->
                         <h5 class="text-center">Kontakta oss</h5>
                      <div class="d-flex align-items-center justify-content-center">
                         <ul>                         
-                            <li class="text-center"><a href="tel:0630555555">063-055 55 55</a></li>
-                            <li class="text-center"><a href="mailto:info@ntig-uppsala.github.io">info@ntig-uppsala.github.io</a></li>
-                            <li class="text-center"><a href="https://www.google.com/maps/place/Fj%C3%A4llgatan+32,+981+39+Kiruna/@67.8660567,20.2318298,17z/data=!3m1!4b1!4m5!3m4!1s0x45d0ba6368d7c9a3:0xe3887ef038c559b0!8m2!3d67.8660547!4d20.2340185" target="_blank">Fjällgatan 32H<br>981 39 Kiruna</a></li>
+                            <li class="text-center"><a href="tel:+4618104200">018-10 42 00</a></li>
+                            <li class="text-center"><a href="mailto:bjorckblomsterhandel@gmail.com">bjorckblomsterhandel@gmail.com</a></li>
+                            <li class="text-center"><a href="https://www.google.com/maps/place/Bj%C3%B6rck+Blomsterhandel/@59.866581,17.6448254,17z/data=!3m1!4b1!4m5!3m4!1s0x465fcc089dd7f38d:0xce2483c7fec1e4c0!8m2!3d59.8665724!4d17.6470031" target="_blank">Torkelsgatan 36<br>753 29 Uppsala</a></li>
                         </ul>
                      </div>
                     </div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <!--FaceBook-->
-                        <a class="btn btn-light btn-social mx-2" href="https://www.facebook.com/ntiuppsala">
+                        <a class="btn btn-light btn-social mx-2" href="https://sv-se.facebook.com/Torkelsgatan/">
                             <div class="icon-container">
                                 <div class="icon" id="Facebook">
                                     <svg width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -222,20 +337,8 @@ Copyright (c) 2013-2021 Start Bootstrap LLC -->
                                 </div>
                             </div>
                         </a>
-                        <!--Twitter-->
-                        <a class="btn btn-light btn-social mx-2" href="https://twitter.com/ntiuppsala">
-                            <div class="icon-container">
-                                <div class="icon" id="Twitter">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <title>Twitter</title>
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                                      </svg>
-                                </div>
-                            </div>
-                        </a>
                         <!--Instagram-->
-                        <a class="btn btn-light btn-social mx-2" href="https://instagram.com/ntiuppsala">
+                        <a class="btn btn-light btn-social mx-2" href="https://www.instagram.com/nyabjorck/?hl=en">
                             <div class="icon-container">
                                 <div class="icon" id="Instagram">
                                     <svg width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -249,7 +352,7 @@ Copyright (c) 2013-2021 Start Bootstrap LLC -->
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 text-center">Copyright &copy; Florist Celeber 2021</div>
+                    <div class="col-lg-4 text-center">Copyright &copy; Nya björck blomsterhandel 2021</div>
                 </div>
             </div>
         </footer>
