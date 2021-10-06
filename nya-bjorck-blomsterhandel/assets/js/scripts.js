@@ -1,6 +1,7 @@
 // Scripts// 
 let openHours = [];
 let closedDays = [];
+let idList = ['null', 'mandagTid', 'tisdagTid', 'onsdagTid', 'torsdagTid', 'fredagTid', 'lordagTid', 'sondagTid']
 let testOverride = false;
 let isReadyOpen = false;
 let isReadyClosed = false;
@@ -42,12 +43,15 @@ function viewSortedClosedDates(dataArray){
 }
 
 function setTimesStatic(openHours){
-    document.getElementById('mandagTid').innerHTML = openHours[1][0] + "-" + openHours[1][1];
-    document.getElementById('tisdagTid').innerHTML = openHours[2][0] + "-" + openHours[2][1];
-    document.getElementById('onsdagTid').innerHTML = openHours[3][0] + "-" + openHours[3][1];
-    document.getElementById('torsdagTid').innerHTML = openHours[4][0] + "-" + openHours[4][1];
-    document.getElementById('fredagTid').innerHTML = openHours[5][0] + "-" + openHours[5][1];
-    document.getElementById('lordagTid').innerHTML = openHours[6][0] + "-" + openHours[6][1];
+    for (let i = 1; i < idList.length; i++) {
+        if (openHours[i][0] != "0" && openHours[i][1] != "0") {
+            document.getElementById(idList[i]).innerHTML = openHours[i][0] + "-" + openHours[i][1];
+        }
+        else {
+            document.getElementById(idList[i]).innerHTML = "Stängt"
+        }
+        
+    }
 }
 
 //From time in timearray get msg
@@ -66,9 +70,6 @@ function getTimeMsg(businessDays, date) {
     }
     if (today[0] == 0 && today[1] == 0) { //Closed Days ex sunday in this case
         return openMsg.openTomorrow;
-    }
-    if (hours >= today[1] && businessDays[day + 1] == '0,0') { //Checks if closed today, and if tomorrow is closed. In this case if its saturday
-        return openMsg.closedUntilMonday;
     }
     if ((hours == today[0] - 1) && (min >= 30)) { //If it's 30 min before opening
         return openMsg.openSoon;
@@ -137,7 +138,7 @@ function requestJson(date) {
     try {
             $.ajax({
                 type: 'GET',
-                url: `https://sheets.googleapis.com/v4/spreadsheets/1UPl5omRAHA6uMnlC--p_tKvYLEYgyrpn7ZJjtdvupoI/values/B11:C17?key=AIzaSyAEcN2gPi9-UMllfIveKJydPZTrmKjJFKY`,
+                url: `https://sheets.googleapis.com/v4/spreadsheets/1Fwxgb6VIi8XiOmfy-wuredX-UWDt-McFvms7k_bFhFE/values/B11:C17?key=AIzaSyAEcN2gPi9-UMllfIveKJydPZTrmKjJFKY`,
                 success: function (response) {
                     FormatResponseOpening(response);
                     isReadyOpen = true;
@@ -145,7 +146,7 @@ function requestJson(date) {
             });
             $.ajax({
                 type: 'GET',
-                url: `https://sheets.googleapis.com/v4/spreadsheets/1UPl5omRAHA6uMnlC--p_tKvYLEYgyrpn7ZJjtdvupoI/values/G11:I24?key=AIzaSyAEcN2gPi9-UMllfIveKJydPZTrmKjJFKY`,
+                url: `https://sheets.googleapis.com/v4/spreadsheets/1Fwxgb6VIi8XiOmfy-wuredX-UWDt-McFvms7k_bFhFE/values/G11:I24?key=AIzaSyAEcN2gPi9-UMllfIveKJydPZTrmKjJFKY`,
                 success: function (response) {
                     let formatedData = FormatResponseClosedDays(response);
                     closedDays = SortClosedDays(formatedData, date);
