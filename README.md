@@ -1,20 +1,9 @@
-# florist-website
-## [Website](http://www.itgwebb.se/klass/webb2/christoffer/florist-celeber/)
+# Nya-björck-blomsterhandel
 
 # Documentation
 
-## florist-celeber
-
 #### index.html
 - Main file that structures the website.
-
-### kiruna
-#### index.html
-- Main file for subpage
-
-### lulea
-#### index.html
-- Main file for subpage
 
 ### Favicon
 - favicon.ico
